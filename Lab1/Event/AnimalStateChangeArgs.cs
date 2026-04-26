@@ -1,7 +1,7 @@
 using System;
-using Lab_1;
+using Lab1;
 
-namespace AnimalSimulation.Events
+namespace Lab1
 {
     public class AnimalStateChangeArgs : EventArgs
     {

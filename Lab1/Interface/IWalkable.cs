@@ -1,6 +1,6 @@
-using Lab_1;
+using Lab1;
 
-namespace AnimalSimulation.Interfaces
+namespace Lab1
 {
     public interface IWalkable
     {

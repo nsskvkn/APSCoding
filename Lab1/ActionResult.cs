@@ -1,6 +1,6 @@
 using System;
 
-namespace Lab_1
+namespace Lab1
 {
     public class ActionResult
     {

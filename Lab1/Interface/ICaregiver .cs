@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Lab_1;
+using Lab1;
 
-namespace Lab_1
+namespace Lab1
 {
     public interface ICaregiver
     {

@@ -1,6 +1,6 @@
-using Lab_1;
+using Lab1;
 
-namespace Lab_1
+namespace Lab1
 {
     public class Lizard : Animal, ICrawlable
     {
