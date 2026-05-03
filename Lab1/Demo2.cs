@@ -41,7 +41,7 @@ public static class Demo2
                     Console.WriteLine("All animals cleaned");
                     break;
 
-                case "4":
+                 case "4":
                     CalendarService.Instance.AdvanceTime(TimeSpan.FromHours(9));
                     foreach (var a in animals)
                         a.CheckLife();

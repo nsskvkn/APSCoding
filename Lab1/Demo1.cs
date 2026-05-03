@@ -7,30 +7,31 @@ namespace Lab1
     {
         public static void Run()
         {
-            var owner = new Owner("John");
+            var petShop = new PetShop("Happy Paws");
 
-            var dog = AnimalFactory.Create("dog", "Rex");
+            var owl = AnimalFactory.Create("owl", "Luna");
 
-            owner.AddAnimal(dog);
+            petShop.AddAnimal(owl);
 
-            // підписка на події
-            dog.StateChanged += (s, e) =>
+            owl.StateChanged += (s, e) =>
             {
-                Console.WriteLine($"{dog.Name} state: {e.State}");
+                Console.WriteLine($"{owl.Name} state: {e.State}");
             };
 
-            dog.Died += (s, e) =>
+            owl.Died += (s, e) =>
             {
-                Console.WriteLine($"{dog.Name} died: {e.Reason}");
+                Console.WriteLine($"{owl.Name} died: {e.Reason}");
             };
 
             Console.WriteLine("=== DEMO 1 START ===");
 
-            Console.WriteLine(dog.Feed().Message);
+            Console.WriteLine(owl.Feed().Message);
+
+            petShop.CleanAll();
 
             CalendarService.Instance.AdvanceTime(TimeSpan.FromHours(9));
 
-            dog.CheckLife();
+            owl.CheckLife();
 
             Console.WriteLine("=== DEMO 1 END ===");
         }

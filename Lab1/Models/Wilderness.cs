@@ -9,8 +9,5 @@ namespace Lab1
             base.AddAnimal(a);
             a.SetWild(); // Тварина на волі автоматично щаслива
         }
-        
-        // Немає FeedAll/CleanAll
-
     }
 }
